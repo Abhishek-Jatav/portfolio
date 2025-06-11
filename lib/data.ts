@@ -33,75 +33,64 @@ export const links = [
   },
 ] as const;
 
+
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "B.Tech in Mechanical Engineering",
+    location: "Delhi Technological University, New Delhi",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Pursuing a B.Tech in Mechanical Engineering (2022–2026). Developed strong technical and analytical skills alongside a growing passion for web development.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2022 - 2026",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Event Manager - ASHRAE DTU",
+    location: "Delhi Technological University",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Managed technical events, workshops, and lectures. Handled logistics, promotions, and coordinated with faculty, students, and industry professionals.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023 - present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Student Notes Sharing Platform",
+    location: "Remote / Personal Project",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Built a full-stack web platform using Next.js, Firebase, and Tailwind CSS. Features include PDF upload/download, preview, search, filters, responsive UI, and an admin dashboard. Deployed on Netlify with CI/CD via GitHub.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
+
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Student Notes Sharing Platform",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Web app to share and access academic notes with preview and filters.",
+    tags: [
+      "Next.js",
+      "Firebase Realtime Database",
+      "Firebase Auth",
+      "Tailwind CSS",
+      "GitHub",
+    ],
     imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    // replace with your actual public image
   },
 ] as const;
 
+
 export const skillsData = [
   "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
   "Next.js",
-  "Node.js",
+  "React.js",
+  "Firebase Auth",
+  "Firebase Realtime DB",
+  "Firebase Storage",
+  "Firebase App Check",
+  "Tailwind CSS",
   "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "GitHub",
+  "Deployment",
 ] as const;
+

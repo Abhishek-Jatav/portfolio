@@ -15,34 +15,33 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about"
-    >
+      id="about">
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+      <p className="mb-3 text-lg">
+        I'm pursuing a{" "}
+        <span className="font-medium">B.Tech in Mechanical Engineering</span> at
+        Delhi Technological University (2022–2026), with a CGPA of 6.5. I
+        developed a strong interest in{" "}
+        <span className="font-medium">web development</span> and built a{" "}
+        <span className="font-medium">Student Notes Sharing Platform</span>{" "}
+        using Next.js, Firebase, and Tailwind CSS.{" "}
+        <span className="italic">My favorite part of coding</span> is solving
+        real problems. I <span className="underline">love</span> turning ideas
+        into functional apps. My core stack includes{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          Next.js, React, Firebase, and Tailwind CSS
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . I'm familiar with GitHub and Netlify and am looking for a{" "}
+        <span className="font-medium">software role or internship</span>.
       </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      <p className="text-lg">
+        <span className="italic">When I'm not coding</span>, I enjoy managing
+        events. As an{" "}
+        <span className="font-medium">Event Manager at ASHRAE DTU</span>, I
+        organized workshops and handled logistics. I also enjoy{" "}
+        <span className="font-medium">learning new tools</span> and exploring
+        Firebase features in my spare time.
       </p>
     </motion.section>
   );
