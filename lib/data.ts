@@ -33,7 +33,6 @@ export const links = [
   },
 ] as const;
 
-
 export const experiencesData = [
   {
     title: "B.Tech in Mechanical Engineering",
@@ -61,7 +60,6 @@ export const experiencesData = [
   },
 ] as const;
 
-
 export const projectsData = [
   {
     title: "Student Notes Sharing Platform",
@@ -78,7 +76,6 @@ export const projectsData = [
   },
 ] as const;
 
-
 export const skillsData = [
   "HTML",
   "Next.js",
@@ -92,4 +89,3 @@ export const skillsData = [
   "GitHub",
   "Deployment",
 ] as const;
-
