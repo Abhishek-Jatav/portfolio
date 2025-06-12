@@ -14,11 +14,13 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
-  // Fix hydration mismatch error
-  const [isMounted, setIsMounted] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
+
   useEffect(() => {
-    setIsMounted(true);
+    setHasMounted(true);
   }, []);
+
+  if (!hasMounted) return null;
 
   return (
     <section
@@ -34,17 +36,15 @@ export default function Intro() {
               type: "tween",
               duration: 0.2,
             }}>
-            {isMounted && (
-              <Image
-                src="https://firebasestorage.googleapis.com/v0/b/urresources-aa70e.firebasestorage.app/o/portfolio%2Fpic.jpg?alt=media&token=90600255-f2d5-4f52-b52e-78bb8450904d"
-                alt="Portrait"
-                width={192}
-                height={192}
-                quality={95}
-                priority={true}
-                className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-              />
-            )}
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/urresources-aa70e.firebasestorage.app/o/portfolio%2Fpic.jpg?alt=media&token=90600255-f2d5-4f52-b52e-78bb8450904d"
+              alt="Portrait"
+              width={192}
+              height={192}
+              quality={95}
+              priority={true}
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+            />
           </motion.div>
 
           <motion.span
