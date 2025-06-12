@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "B.Tech in Mechanical Engineering",
     location: "Delhi Technological University, New Delhi",
     description:
-      "Pursuing a B.Tech in Mechanical Engineering (2022–2026). Developed strong technical and analytical skills alongside a growing passion for web development.",
+      "Pursuing a B.Tech in Mechanical Engineering (2022–2026). Gained strong problem-solving skills and developed a keen interest in web development through hands-on projects.",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - 2026",
   },
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Event Manager - ASHRAE DTU",
     location: "Delhi Technological University",
     description:
-      "Managed technical events, workshops, and lectures. Handled logistics, promotions, and coordinated with faculty, students, and industry professionals.",
+      "Led successful events and workshops by improving planning strategies. Enhanced team coordination, handled logistics, and resolved real-time challenges with faculty and peers.",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
@@ -54,11 +54,12 @@ export const experiencesData = [
     title: "Student Notes Sharing Platform",
     location: "Remote / Personal Project",
     description:
-      "Built a full-stack web platform using Next.js, Firebase, and Tailwind CSS. Features include PDF upload/download, preview, search, filters, responsive UI, and an admin dashboard. Deployed on Netlify with CI/CD via GitHub.",
+      "Built a full-stack web app using Next.js, Firebase, and Tailwind CSS. Improved UX with PDF preview, search, and filters. Gained CI/CD skills via GitHub and Netlify deployment.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
 ] as const;
+
 
 export const projectsData = [
   {

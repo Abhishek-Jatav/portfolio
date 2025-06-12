@@ -20,28 +20,31 @@ export default function About() {
       <p className="mb-3 text-lg">
         I'm pursuing a{" "}
         <span className="font-medium">B.Tech in Mechanical Engineering</span> at
-        Delhi Technological University (2022–2026), with a CGPA of 6.5. I
-        developed a strong interest in{" "}
-        <span className="font-medium">web development</span> and built a{" "}
+        Delhi Technological University (2022–2026),  I
+        discovered my passion for{" "}
+        <span className="font-medium">web development</span> through building a{" "}
         <span className="font-medium">Student Notes Sharing Platform</span>{" "}
-        using Next.js, Firebase, and Tailwind CSS.{" "}
-        <span className="italic">My favorite part of coding</span> is solving
-        real problems. I <span className="underline">love</span> turning ideas
-        into functional apps. My core stack includes{" "}
+        using Next.js, Firebase, and Tailwind CSS. This project taught me how to
+        solve real problems and ship complete features.{" "}
+        <span className="italic">My favorite part of coding</span> is turning
+        feedback into better user experiences. I now work confidently with{" "}
         <span className="font-medium">
           Next.js, React, Firebase, and Tailwind CSS
         </span>
-        . I'm familiar with GitHub and Netlify and am looking for a{" "}
+        . I've improved my workflow using GitHub and Netlify, and I'm actively
+        seeking a{" "}
         <span className="font-medium">software role or internship</span>.
       </p>
 
       <p className="text-lg">
-        <span className="italic">When I'm not coding</span>, I enjoy managing
-        events. As an{" "}
+        <span className="italic">When I'm not coding</span>, I like working with
+        people. As an{" "}
         <span className="font-medium">Event Manager at ASHRAE DTU</span>, I
-        organized workshops and handled logistics. I also enjoy{" "}
-        <span className="font-medium">learning new tools</span> and exploring
-        Firebase features in my spare time.
+        successfully organized technical events and resolved real-time issues. I
+        gained experience in planning, team coordination, and{" "}
+        <span className="font-medium">problem-solving under pressure</span>. In
+        my free time, I explore more and try out{" "}
+        <span className="font-medium">new tools</span> to stay ahead.
       </p>
     </motion.section>
   );
