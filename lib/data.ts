@@ -74,8 +74,7 @@ export const projectsData = [
       "Tailwind CSS",
       "GitHub",
     ],
-    imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/urresources-aa70e.firebasestorage.app/o/portfolio%2Fnerd.png?alt=media&token=29f5261a-841c-4fef-97e4-a5bfba307533",
+    imageUrl: "/nerd.png",
   },
 ] as const;
 
