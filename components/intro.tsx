@@ -29,7 +29,7 @@ export default function Intro() {
               duration: 0.2,
             }}>
             <Image
-              src="https://res.cloudinary.com/dabsbgrhx/image/upload/v1749740036/pic_qmvxv8.jpg" // ✅ Corrected the file extension (was `.jepeg`, now `.jpeg`)
+              src="https://firebasestorage.googleapis.com/v0/b/urresources-aa70e.firebasestorage.app/o/portfolio%2Fpic.jpg?alt=media&token=90600255-f2d5-4f52-b52e-78bb8450904d"
               alt="Portrait"
               width={192}
               height={192}
