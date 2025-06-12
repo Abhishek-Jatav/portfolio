@@ -29,7 +29,7 @@ export default function Intro() {
               duration: 0.2,
             }}>
             <Image
-              src="https://collection.cloudinary.com/dabsbgrhx/e7b123f2bf1d0aab4b68fa00abfc1e59" // ✅ Corrected the file extension (was `.jepeg`, now `.jpeg`)
+              src="https://res.cloudinary.com/dabsbgrhx/image/upload/v1749740036/pic_qmvxv8.jpg" // ✅ Corrected the file extension (was `.jepeg`, now `.jpeg`)
               alt="Portrait"
               width={192}
               height={192}
