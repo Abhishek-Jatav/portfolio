@@ -29,8 +29,8 @@ export default function Intro() {
               duration: 0.2,
             }}>
             <Image
-              src="https://drive.google.com/uc?export=view&id=1rdXLMxfDg755og6om3qGPxk8_jfSy8Vs"
-              alt="portrait"
+              src="/profile.jpeg" // ✅ Corrected the file extension (was `.jepeg`, now `.jpeg`)
+              alt="Portrait"
               width={192}
               height={192}
               quality={95}
