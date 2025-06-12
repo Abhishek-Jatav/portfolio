@@ -2,7 +2,6 @@
 
 import { useRef, useState, useEffect } from "react";
 import { projectsData } from "@/lib/data";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -19,7 +18,6 @@ export default function Project({
     offset: ["0 1", "1.33 1"],
   });
 
-  // Delay animation until client-side render to avoid hydration error
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
@@ -54,15 +52,10 @@ export default function Project({
           </ul>
         </div>
 
-        {/* Image */}
-        <Image
-          src={imageUrl}
-          alt={title}
-          width={452} // Matches w-[28.25rem]
-          height={300} // Adjust to actual aspect ratio
-          quality={95}
-          loading="lazy"
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+        {/* Background Image Replacement */}
+        <div
+          style={{ backgroundImage: `url(${imageUrl})` }}
+          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] h-[300px] bg-cover bg-center rounded-t-lg shadow-2xl
             transition 
             group-hover:scale-[1.04]
             group-hover:-translate-x-3
@@ -73,8 +66,7 @@ export default function Project({
             group-even:group-hover:translate-y-3
             group-even:group-hover:rotate-2
 
-            group-even:right-[initial] group-even:-left-40"
-        />
+            group-even:right-[initial] group-even:-left-40"></div>
       </section>
     </motion.div>
   );
