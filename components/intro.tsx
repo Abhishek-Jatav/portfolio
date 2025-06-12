@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -13,6 +13,12 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  // Fix hydration mismatch error
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <section
@@ -28,15 +34,17 @@ export default function Intro() {
               type: "tween",
               duration: 0.2,
             }}>
-            <Image
-              src="https://firebasestorage.googleapis.com/v0/b/urresources-aa70e.firebasestorage.app/o/portfolio%2Fpic.jpg?alt=media&token=90600255-f2d5-4f52-b52e-78bb8450904d"
-              alt="Portrait"
-              width={192}
-              height={192}
-              quality={95}
-              priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            />
+            {isMounted && (
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/urresources-aa70e.firebasestorage.app/o/portfolio%2Fpic.jpg?alt=media&token=90600255-f2d5-4f52-b52e-78bb8450904d"
+                alt="Portrait"
+                width={192}
+                height={192}
+                quality={95}
+                priority={true}
+                className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              />
+            )}
           </motion.div>
 
           <motion.span
